@@ -1,0 +1,25 @@
+<!-- Header -->
+<app-nav-bar></app-nav-bar>
+<header class="header">
+  <app-weather></app-weather>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-container">
+          <h1 style="color: #68afc5">Position N weather</h1>
+          <h2 style="color: white">Welcome Back {{ user?.name}}!</h2>
+          <h3 class="p-large p-heading">
+            Know your position N weather with one click!
+          </h3>
+          <a class="btn-solid-lg" routerLink="/Localisation"
+            ><i class="fab fas fa-meteor"></i>Show your localisation</a
+          >
+        </div>
+        <!-- end of text-container -->
+      </div>
+      <!-- end of col -->
+    </div>
+    <!-- end of row -->
+  </div>
+</header>

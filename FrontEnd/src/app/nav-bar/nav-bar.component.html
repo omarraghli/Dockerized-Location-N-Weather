@@ -1,0 +1,23 @@
+<mat-toolbar class="mat-elevation-z8 app-toolbar">
+  <span class="tabulation">Position N weather</span>
+  <div class="spacer"></div>
+
+  <a mat-button *ngIf="isSignIn() == 'true'" color="primary" routerLink="/Home"
+    >Home</a
+  >
+  <a
+    mat-raised-button
+    *ngIf="isSignIn() == 'false'"
+    color="primary"
+    routerLink="/login-signup"
+    >Sign in</a
+  >
+  <a
+    mat-raised-button
+    *ngIf="isSignIn() == 'true'"
+    color="primary"
+    routerLink="/login-signup"
+    (click)="Logout()"
+    >Logout</a
+  >
+</mat-toolbar>
